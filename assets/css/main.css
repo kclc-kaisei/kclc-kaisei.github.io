@@ -1,6 +1,12 @@
-.header-panel{
+/* ヘッダー背景色 */
+.navbar{
     background-color: #539412;
 }
+/* ヘッダーアイコン */
 .kclc-icon{
     border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    /* 大画面のときに文字と被る為 */
+    margin-right: 20px;
 }

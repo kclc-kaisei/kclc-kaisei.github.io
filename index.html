@@ -4,25 +4,40 @@
     <meta charset="utf-8">
     <!--jQuery-->
     <script src="https://img.atcoder.jp/public/fc4b538/js/lib/jquery-1.9.1.min.js"></script>
-
     <!--bootstrap-->
-    <link rel="stylesheet" type="text/css" href="https://img.atcoder.jp/public/7cd93c2/css/bootstrap.min.css">
-    <script src="https://img.atcoder.jp/public/fc4b538/js/lib/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!-- 独自のcss -->
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
 </head>
 <body>
-    <div class="header-panel">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-4 col-xs-12">
-                    <div class="row-picture">
-                        <img src="./assets/img/KCLC.png" height="75px" width="75px" class="kclc-icon">
-                    </div>
-                </div>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <img src="./assets/img/KCLC.png" class="kclc-icon">
+        <a class="navbar-brand" href="#">KCLC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kouza/">Course</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Links
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="https://twitter.com/42ndKCLC">Twitter</a>
+                <a class="dropdown-item" href="http://kclc.net">40/41 HP</a>
+                <a class="dropdown-item" href="https://kaiseigakuen.jp">Kaisei HP</a>
+              </div>
+            </li>
+          </ul>
         </div>
-    </div>
+      </nav>
     <div class="container main">
         <div class="row">
             
