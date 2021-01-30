@@ -1,6 +1,7 @@
 .header-panel{
-    background-color: #539412;
+    background-color: #539412;;
 }
 .kclc-icon{
+    opacity: .8;
     border-radius: 50%;
 }
