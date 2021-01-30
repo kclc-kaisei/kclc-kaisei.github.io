@@ -29,4 +29,14 @@
 .description{
     padding: 20px;
     background-color: white;
+    font-size: larger;
+}
+
+.article-link{
+    font-size: larger;
+}
+
+.article-link:hover{
+    color: tomato;
+    text-decoration: none;
 }
