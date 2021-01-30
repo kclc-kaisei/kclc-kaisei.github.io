@@ -11,3 +11,22 @@
     /* 大画面のときに文字と被る為 */
     margin-right: 20px;
 }
+/* 見出し */
+.head-line{
+    padding: 1rem 2rem;
+    border-left: 4px solid #000;
+}
+
+
+.shadow{
+    box-shadow:0px 0px 10px;
+}
+
+.main{
+    padding: 10px;
+}
+
+.description{
+    padding: 20px;
+    background-color: white;
+}
