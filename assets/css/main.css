@@ -1,6 +1,11 @@
 /* ヘッダー背景色 */
 .navbar{
     background-color: #539412;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 /* ヘッダーアイコン */
 .kclc-icon{
@@ -24,6 +29,7 @@
 
 .main{
     padding: 10px;
+    padding-top: 70px;
 }
 
 .description{
@@ -39,4 +45,23 @@
 .article-link:hover{
     color: tomato;
     text-decoration: none;
+}
+
+.table{
+    background-color: rgb(212, 212, 212);
+    margin-top: -5px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding-top: 50px;
+    font-size: larger;
+}
+
+
+.main-article{
+    margin: -5px 0px 50px 0px;
+    padding: 40px 40px 50px 40px;
+}
+
+.main-article div{
+    margin: 20px;
 }
