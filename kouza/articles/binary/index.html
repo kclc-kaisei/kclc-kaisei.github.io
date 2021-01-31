@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <!--jQuery-->
+    <script src="https://img.atcoder.jp/public/fc4b538/js/lib/jquery-1.9.1.min.js"></script>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!-- 独自のcss -->
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/main.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <a href="./assets/img/KCLC.png"><img src="../../../assets/img/KCLC.png" class="kclc-icon"></a>
+        <a class="navbar-brand" href="#">KCLC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="../../../index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../kouza/index.html">Course</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Links
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="https://twitter.com/42ndKCLC" target="_blank" rel="noopener noreferrer">Twitter</a>
+                <a class="dropdown-item" href="http://kclc.net" target="_blank" rel="noopener noreferrer">40th/41st HP</a>
+                <a class="dropdown-item" href="https://kaiseigakuen.jp" target="_blank" rel="noopener noreferrer">Kaisei HP</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    
+    <div class="container main">
+        <div class="row">
+            <div class="col-md-9 order-md-1 col-sm-12 order-sm-2 main-article shadow">
+                <p>
+                    <div id = "Pre1-top">
+                        <h2>KCLC Websiteへようこそ！🎉🎉🎉</h2>
+                        この章では、コンピュータを扱うには欠かせない<b>2進法</b>について説明します。<br>
+                        既に理解している方はこの章を飛ばして十分です。<br>
+                      </div>
+                      <div id = "Pre1-beginning">
+                        <div id = "Pre1-beginning-description">
+                          <h3>はじめに</h3>
+                          コンピュータを使って処理するとき、コンピュータはあらゆる文字を<b>2進法</b>を用いて表します。<br>
+                          電圧の強弱だけで0と1を表せるので都合が良いのです。<br>
+                          例えば、人間が「123」と打ち込むと、コンピュータは「1111011」として扱います。<br>
+                        </div>
+                        <div id = "Pre1-beggining-problems">
+                          <h4>演習問題</h4>
+                          <ol>
+                            <li>2021を2進数に変換しよう。<input></li><!--11111100101-->
+                            <details>
+                              <summary>Answer</summary>
+                              11111100101
+                            </details><br>
+                            <li>2進数の110011001を10進数に変換しよう。<input></li><!--409-->
+                            <details>
+                              <summary>Answer</summary>
+                              409
+                            </details>
+                          </ol>
+                        </div>
+                      </div>
+                      <div id = "Pre1-binoperator">
+                        <div id = "Pre1-binoperator-description">
+                          <h3>コンピュータの基本的な演算</h3>
+                        いきなりコンピュータに「足し算しろ」「割り算しろ」といっても難しいのです。<br>
+                        まずは、コンピュータが簡単に扱える2進法での演算を紹介します。
+                        <ol>
+                          <li>NOT</li>
+                          NOT a という風に用います。<br>
+                          各桁の0と1を入れ替えるだけです。<br>
+                          例) NOT 01 = 10<br>
+                          <li>AND</li>
+                          a AND b という風に用います。<br>
+                          各桁ごとに、<br>
+                          <ul>
+                            <li>両方1であれば、1</li>
+                            <li>それ以外であれば、0</li>
+                          </ul>
+                          と計算します。<br>
+                          例) 1100 AND 1010 = 1000<br>
+                          <li>OR</li>
+                          a OR b という風に用います。<br>
+                          各桁ごとに、<br>
+                          <ul>
+                            <li>どちらかが1であれば、1</li>
+                            <li>どちらも0であれば、0</li>
+                          </ul>
+                          例) 1100 OR 1010 = 1110<br>
+                          <li>XOR</li>
+                          a XOR b という風に用います。<br>
+                          各桁ごとに、<br>
+                          <ul>
+                            <li>一方の桁ともう一方の桁が異なっていれば、1</li>
+                            <li>両方の桁が同じならば、0</li>
+                          </ul>
+                          例) 1100 XOR 1010 = 0110<br>
+                        </ol>
+                        <br>
+                        ここまでの演算を表にまとめました。
+                        <table border="2">
+                          <tr>
+                            <th>a</th>
+                            <th>b</th>
+                            <th>NOT a</th>
+                            <th>NOT b</th>
+                            <th>a AND b</th>
+                            <th>a OR b</th>
+                            <th>a XOR b</th>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                          </tr>
+                          <tr>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                          </tr>
+                          <tr>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                          </tr>
+                        </table>
+                        <h4>これらの演算の共通点</h4>
+                        四則演算(足し算、引き算、掛け算、割り算)では、ある桁の答えを求めるときに別の桁もみる必要があります。<br>
+                        例えば、足し算では1つ下の位をみて繰り上がり処理をする必要があります。<br>
+                        一方これらの演算ではそれぞれの桁を独立にみることで答えが出るので、コンピュータが処理しやすいのです。<br>
+                        </div>
+                        <div id = "Pre1-binoperator-problems">
+                          <h4>演習問題</h4>
+                        注意:NOT aの時、表示されている6桁のみ反転させてください。<br>
+                        例えば、NOT 100010を NOT 00100010と変換せず、そのまま計算してください。
+                        <ol>
+                          <li>(NOT 100010) XOR 101010 = <input></li><!--110111-->
+                          <details>
+                            <summary>Answer</summary>
+                            (NOT 100010) XOR 101010<br>
+                            = 011101 XOR 101010<br>
+                            = 110111
+                          </details><br>
+                          <!---------------------------------------------------------------------------->
+                          <li>((110101 XOR 100101) OR 101110) AND 110111 = <input></li><!--110110-->
+                          <details>
+                            <summary>Answer</summary>
+                            ((110101 XOR 100101) OR 101110) AND 110111<br>
+                            = (010000 OR 101110) AND 110111<br>
+                            = 111110 AND 110111<br>
+                            = 110110
+                          </details><br>
+                          <!---------------------------------------------------------------------------->
+                          <li>(NOT 100101) AND (NOT (NOT 111011)) = <input></li><!--011010-->
+                          <details>
+                            <summary>Answer</summary>
+                            (NOT 100101) AND (NOT (NOT 111011))<br>
+                            = 011010 AND 111011<br>
+                            = 011010<br>
+                            <br>
+                            NOT (NOT a) = a が成り立ちます。
+                          </details><br>
+                          <!---------------------------------------------------------------------------->
+                          <li>NOT (110101 AND 011010) = <input></li><!--101111-->
+                          <details>
+                            <summary>Answer</summary>
+                            NOT (110101 AND 011010)<br>
+                            = NOT 010000<br>
+                            = 101111<br>
+                          </details><br>
+                          <!---------------------------------------------------------------------------->
+                          <li>(NOT 110101) OR (NOT 011010) = <input></li><!--101111-->
+                          <details>
+                            <summary>Answer</summary>
+                            (NOT 110101) OR (NOT 011010)<br>
+                            = 001010 OR 100101<br>
+                            = 101111
+                          </details><br>
+                          <!---------------------------------------------------------------------------->
+                          <li>NOT (101000 OR 001010) = <input></li><!--010101-->
+                          <details>
+                            <summary>Answer</summary>
+                            NOT (101000 OR 001010)<br>
+                            = NOT 101010<br>
+                            = 010101
+                          </details><br>
+                          <!---------------------------------------------------------------------------->
+                          <li>(NOT 101000) AND (NOT 001010) = <input></li><!--010101-->
+                          <details>
+                            <summary>Answer</summary>
+                            NOT (101000) AND (NOT 001010)<br>
+                            = 010111 AND 110101<br>
+                            = 010101
+                          </details>
+                        </ol>
+                        </div>
+                      </div>
+                      <div id = "Pre1-nextnotice">
+                        <h3>次回予告</h3>
+                        これらの演算を組み合わせて、足し算、引き算、掛け算、割り算をしてみましょう！<br>
+                        <a href="Pre2 Page あとで入力">次のページへ</a>
+                      </div>
+                      
+                  
+            </div>
+
+
+            <!--他の記事に飛ぶためのdiv-->
+            <div class="col-md-3 order-md-3 col-sm-12 order-sm-1 table">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
