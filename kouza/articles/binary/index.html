@@ -17,6 +17,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <!-- 独自のcss -->
     <link rel="stylesheet" type="text/css" href="../../../assets/css/main.css">
+
+
+    <script type="text/javascript" id="MathJax-script" async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light shadow">
@@ -49,11 +55,12 @@
 
     
     <div class="container main">
+        
         <div class="row">
             <div class="col-md-9 order-md-1 col-sm-12 order-sm-2 main-article shadow">
                 <p>
                     <div id = "Pre1-top">
-                        <h2>KCLC Websiteへようこそ！🎉🎉🎉</h2>
+                        <h2 class="head-line">KCLC Websiteへようこそ！</h2>
                         この章では、コンピュータを扱うには欠かせない<b>2進法</b>について説明します。<br>
                         既に理解している方はこの章を飛ばして十分です。<br>
                       </div>
@@ -67,15 +74,15 @@
                         <div id = "Pre1-beggining-problems">
                           <h4>演習問題</h4>
                           <ol>
-                            <li>2021を2進数に変換しよう。<input></li><!--11111100101-->
-                            <details>
-                              <summary>Answer</summary>
-                              11111100101
+                            <li>2021を2進数に変換しよう。<input type="number" class="prob"></li><!--11111100101-->
+                            <details class="answer" onclick="check(0)" data-val="11111100101">
+                              <summary>答え</summary>
+                              \(11111100101\)
                             </details><br>
-                            <li>2進数の110011001を10進数に変換しよう。<input></li><!--409-->
-                            <details>
-                              <summary>Answer</summary>
-                              409
+                            <li>2進数の110011001を10進数に変換しよう。<input type="number" class="prob"></li><!--409-->
+                            <details class="answer" onclick="check(1)" data-val="409">
+                              <summary>答え</summary>
+                              \(409\)
                             </details>
                           </ol>
                         </div>
@@ -175,63 +182,92 @@
                         注意:NOT aの時、表示されている6桁のみ反転させてください。<br>
                         例えば、NOT 100010を NOT 00100010と変換せず、そのまま計算してください。
                         <ol>
-                          <li>(NOT 100010) XOR 101010 = <input></li><!--110111-->
-                          <details>
-                            <summary>Answer</summary>
-                            (NOT 100010) XOR 101010<br>
-                            = 011101 XOR 101010<br>
-                            = 110111
+                          <li>(NOT 100010) XOR 101010 = <input type="number" class="prob"></li><!--110111-->
+                          <details class="answer" onclick="check(2)" data-val="110111">
+                            <summary>答え</summary>
+                            \[
+                            \begin{align}
+                            (NOT(100010))\ XOR\ 101010\ &=\ 011101\ XOR\ 101010 \\
+                            &=\ 110111
+                            \end{align}
+                            \]
                           </details><br>
                           <!---------------------------------------------------------------------------->
-                          <li>((110101 XOR 100101) OR 101110) AND 110111 = <input></li><!--110110-->
-                          <details>
-                            <summary>Answer</summary>
-                            ((110101 XOR 100101) OR 101110) AND 110111<br>
-                            = (010000 OR 101110) AND 110111<br>
-                            = 111110 AND 110111<br>
-                            = 110110
+                          <li>((110101 XOR 100101) OR 101110) AND 110111 = <input type="number" class="prob"></li><!--110110-->
+                          <details class="answer" onclick="check(3)" data-val="110110">
+                            <summary>答え</summary>
+                            \[
+                            \begin{align}
+                            ((110101\ XOR\ 100101)\ OR\ 101110)\ AND\ 110111
+                            &= (010000\ OR\ 101110)\ AND\ 110111 \\
+                            &= 111110\ AND\ 110111 \\
+                            &= 110110
+                            \end{align}
+                            \]
                           </details><br>
                           <!---------------------------------------------------------------------------->
-                          <li>(NOT 100101) AND (NOT (NOT 111011)) = <input></li><!--011010-->
-                          <details>
-                            <summary>Answer</summary>
-                            (NOT 100101) AND (NOT (NOT 111011))<br>
-                            = 011010 AND 111011<br>
-                            = 011010<br>
-                            <br>
-                            NOT (NOT a) = a が成り立ちます。
+                          <li>(NOT 100101) AND (NOT (NOT 111011)) = <input type="number" class="prob"></li><!--011010-->
+                          <details class="answer" onclick="check(4)" data-val="011010">
+                            <summary>答え</summary>
+                            \[
+                            \begin{align}
+                            (NOT\ 100101)\ AND\ (NOT\ (NOT\ 111011))
+                            &=\ 011010\ AND\ 111011 \\
+                            &=\ 011010
+                            \end{align}
+                            \]
+                            
+                            \(NOT(NOT(a))\ =\ a\) が成り立ちます。
                           </details><br>
                           <!---------------------------------------------------------------------------->
-                          <li>NOT (110101 AND 011010) = <input></li><!--101111-->
-                          <details>
-                            <summary>Answer</summary>
-                            NOT (110101 AND 011010)<br>
-                            = NOT 010000<br>
-                            = 101111<br>
+                          <li>NOT (110101 AND 011010) = <input type="number" class="prob"></li><!--101111-->
+                          <details class="answer" onclick="check(5)" data-val="101111">
+                            <summary>答え</summary>
+                            \[
+                            \begin{align}
+                            NOT(110101\ AND\ 011010)
+                            &=\ NOT(010000) \\
+                            &=\ 101111
+                            \end{align}
+                            \]
+                            
                           </details><br>
                           <!---------------------------------------------------------------------------->
-                          <li>(NOT 110101) OR (NOT 011010) = <input></li><!--101111-->
-                          <details>
-                            <summary>Answer</summary>
-                            (NOT 110101) OR (NOT 011010)<br>
-                            = 001010 OR 100101<br>
-                            = 101111
+                          <li>(NOT 110101) OR (NOT 011010) = <input type="number" class="prob"></li><!--101111-->
+                          <details class="answer" onclick="check(6)" data-val="101111">
+                            <summary>答え</summary>
+                            \[
+                            \begin{align}
+                            (NOT(110101))\ OR\ (NOT(011010))
+                            &=\ 001010\ OR\ 100101 \\
+                            &=\ 101111
+                            \end{align}
+                            \]
+                            
                           </details><br>
                           <!---------------------------------------------------------------------------->
-                          <li>NOT (101000 OR 001010) = <input></li><!--010101-->
-                          <details>
-                            <summary>Answer</summary>
-                            NOT (101000 OR 001010)<br>
-                            = NOT 101010<br>
-                            = 010101
+                          <li>NOT (101000 OR 001010) = <input type="number" class="prob"></li><!--010101-->
+                          <details class="answer" onclick="check(7)" data-val="010101">
+                            <summary>答え</summary>
+                            \[
+                            \begin{align}
+                            NOT(101000\ OR\ 001010)
+                            &=\ NOT(101010) \\
+                            &=\ 010101
+                            \end{align}
+                            \]
                           </details><br>
                           <!---------------------------------------------------------------------------->
-                          <li>(NOT 101000) AND (NOT 001010) = <input></li><!--010101-->
-                          <details>
-                            <summary>Answer</summary>
-                            NOT (101000) AND (NOT 001010)<br>
-                            = 010111 AND 110101<br>
-                            = 010101
+                          <li>(NOT 101000) AND (NOT 001010) = <input type="number" class="prob"></li><!--010101-->
+                          <details class="answer" onclick="check(8)" data-val="010101">
+                            <summary>答え</summary>
+                            \[
+                            \begin{align}
+                            NOT(101000)\ AND\ (NOT(001010))
+                            &=\ 010111\ AND\ 110101 \\
+                            &=\ 010101
+                            \end{align}
+                            \]
                           </details>
                         </ol>
                         </div>
@@ -252,5 +288,6 @@
             </div>
         </div>
     </div>
+    <script src="../../../assets/js/correct.js"></script>
 </body>
 </html>
