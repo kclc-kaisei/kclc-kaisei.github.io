@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- タイトルと説明 -->
+    <title>42nd KCLC</title>
+    <meta name="description" content="KCLC official Homepage">
+    <!-- 表示領域 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 文字コード設定 -->
+    <meta charset="utf-8">
+    <!-- favicon -->
+    <link rel="icon" href="../../../assets/img/favicon.ico">
+    <!--jQuery-->
+    <script src="https://img.atcoder.jp/public/fc4b538/js/lib/jquery-1.9.1.min.js"></script>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!-- 独自のcss -->
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/main.css">
+
+
+    <script type="text/javascript" id="MathJax-script" async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <a href="../../../index.html"><img src="../../../assets/img/KCLC.png" class="kclc-icon"></a>
+        <a class="navbar-brand" href="../../../index.html">42nd KCLC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="../../../index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../kouza/index.html">Course</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Links
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="https://twitter.com/42ndKCLC" target="_blank" rel="noopener noreferrer">Twitter</a>
+                <a class="dropdown-item" href="http://kclc.net" target="_blank" rel="noopener noreferrer">40th/41st HP</a>
+                <a class="dropdown-item" href="https://kaiseigakuen.jp" target="_blank" rel="noopener noreferrer">Kaisei HP</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    
+    <div class="container main">
+        
+        <div class="row">
+            <div class="col-md-9 order-md-1 col-sm-12 order-sm-2 main-article shadow">
+                <h1 class="head-line">0章-はじめに</h1>
+                <div class="paragraph">
+                    <p>
+                        KCLCのHPへようこそ！この講座ではプログラミングの技術を習得してもらいます。
+                        しかしいきなりそんなことを言われても心の準備もできないと思うのでこの章では
+                    </p>
+                    <ul>
+                        <li>KCLCの詳しい活動</li>
+                        <li>プログラミングとは何か</li>
+                    </ul>
+                    について説明しておきます。
+                </div>
+                <h2 class="head-line">KCLCの詳しい活動</h2>
+                <div class="paragraph">
+                    <p>Homeにも書いてあった通りKCLCは部活では余り活動していませんが、部員は家では<strong>プログランミング</strong>をしています。</p>
+                    <p>プログラミングの分野も色々あって例えばウェブサイトを作る<strong>web開発</strong>をしている人もいれば、
+                        <strong>ゲームを作ったり</strong>、
+                        AIを作る<strong>機械学習</strong>をしている人もいます。</p>
+                    <p>また、KCLCの部長は同級生と協力し<strong>Androidのアプリ</strong>を作ってパソコン甲子園という大会でグランプリを獲得しました。</p>
+                    <p>
+                        また、部員の中には<strong>競技プログラミング</strong>をしている人が結構います。
+                        この講座の後半では主に競技プログラミングについての解説をしていきます。
+                        しかし、前半は基本的なコードを書く練習をしてもらいます。
+                    </p>
+                </div>
+                <h2 class="head-line">プログラミングとは何か</h2>
+                <div class="paragraph">
+                    <p>プログラミングというのはプログラムを作る作業のことです。ではプログラムとは何でしょうか？</p>
+                    <p>プログラムとはコンピュータに何かを実行させることの出来る命令のことです。</p>
+                    <p>例えば、「1+2を計算して」「電気をつけて」のようなものはプログラムです。
+                        このプログラムを実行することによってコンピュータは1+2=3と計算してくれたり電気をつけたりしてくれるのです。</p>
+                </div>
+                <div class="paragraph">
+                    <p>
+                    ではこのプログラムはどのようにして作るのでしょうか？
+                    プログラムはコンピュータの分かる言語で書かなくてはいけません。このコンピュータの分かる言語のことを
+                    <strong>プログラミング言語</strong>といいます。このプログラミング言語について知り、書けるようになればコンピュータに
+                    命令を出すことができます。</p>
+                    <!--<p>このプログラミング言語はいくつも種類がありますが、この講座では<strong>C++</strong>を学ぶことを推奨します。</p>-->
+                </div>
+            </div>
+
+
+            <!--他の記事に飛ぶためのdiv-->
+            <div class="col-md-3 order-md-3 col-sm-12 order-sm-1 table">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
