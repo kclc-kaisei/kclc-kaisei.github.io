@@ -73,3 +73,8 @@ input.prob[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none; 
     margin: 0; 
 }
+/* スクロールバーを非表示に(スクロールは可能) */
+::-webkit-scrollbar {
+    display: none;
+    -webkit-appearance: none;
+}
