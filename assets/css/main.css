@@ -73,3 +73,6 @@ input.prob[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none; 
     margin: 0; 
 }
+.kouza-table{
+    margin: 20px;
+}
