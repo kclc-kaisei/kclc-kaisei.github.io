@@ -1,7 +1,7 @@
 /* ヘッダー背景色 */
 .navbar{
     background-color: #539412;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
@@ -72,4 +72,9 @@ input.prob[type="number"]::-webkit-outer-spin-button,
 input.prob[type="number"]::-webkit-inner-spin-button { 
     -webkit-appearance: none; 
     margin: 0; 
+}
+/* スクロールバーを非表示に(スクロールは可能) */
+::-webkit-scrollbar {
+    display: none;
+    -webkit-appearance: none;
 }
