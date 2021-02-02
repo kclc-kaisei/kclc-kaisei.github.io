@@ -1,11 +1,11 @@
 /* ヘッダー背景色 */
 .navbar{
     background-color: #539412;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000000000000;
+    z-index: 1;
 }
 /* ヘッダーアイコン */
 .kclc-icon{
@@ -17,12 +17,8 @@
     margin-right: 20px;
 }
 /* 見出し */
-h1.head-line,h2.head-line{
+.head-line{
     padding: 1rem 2rem;
-    border-left: 4px solid #000;
-}
-h3.head-line{
-    padding: 0.5rem 1rem;
     border-left: 4px solid #000;
 }
 
@@ -41,8 +37,6 @@ h3.head-line{
     background-color: white;
     font-size: larger;
 }
-
-
 .article-link{
     font-size: larger;
 }
@@ -65,34 +59,8 @@ h3.head-line{
 .main-article{
     margin: -5px 0px 50px 0px;
     padding: 40px 40px 50px 40px;
-    z-index: 1;
 }
 
-
-.description div,.main-article div{
+.main-article div{
     margin: 20px;
-    z-index: -1;
-    font-size: 105%;
-}
-
-
-/*input type="number"の時に出てくる右側の矢印を消す*/
-input.prob[type="number"]::-webkit-outer-spin-button, 
-input.prob[type="number"]::-webkit-inner-spin-button { 
-    -webkit-appearance: none; 
-    margin: 0; 
-}
-.kouza-table{
-    margin: 20px;
-}
-
-img{
-    vertical-align: middle;
-    max-width: 100%;
-}
-
-/* スクロールバーを非表示に(スクロールは可能) */
-::-webkit-scrollbar {
-    display: none;
-    -webkit-appearance: none;
 }
