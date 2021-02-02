@@ -17,6 +17,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <!-- 独自のcss -->
     <link rel="stylesheet" type="text/css" href="../../../assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/syntax.css">
+    <!--シンタックスハイライト-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/vs.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();window.onload = function(){$(".hljs").css("background-color","#f2f2f2");}</script>
 
 
     <script type="text/javascript" id="MathJax-script" async
@@ -58,44 +63,54 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
         
         <div class="row">
             <div class="col-md-9 order-md-1 col-sm-12 order-sm-2 main-article shadow">
-                <h1 class="head-line">0章～はじめに～</h1>
+                <h1 class="head-line">第1章-コードの実行</h1>
                 <div class="paragraph">
-                    <p>
-                        KCLCのHPへようこそ！この講座ではプログラミングの技術を習得してもらいます。
-                        しかしいきなりそんなことを言われても心の準備もできないと思うのでこの章では
-                    </p>
-                    <ul>
-                        <li>KCLCの詳しい活動</li>
-                        <li>プログラミングとは何か</li>
-                    </ul>
-                    について説明しておきます。
+                    前回の講座ではプログラミングとは何かについて解説しましたが、解説だけでは飽きると思うので
+                    ここでは皆さんに実際にコードを実行してプログラミングの楽しさを体験してもらおうと思います。
                 </div>
-                <h2 class="head-line">KCLCの詳しい活動</h2>
+
+
+                <!--todo:競技プログラミングとは何かの章を作る-->
                 <div class="paragraph">
-                    <p>Homeにも書いてあった通りKCLCは部活では余り活動していませんが、部員は家では<strong>プログランミング</strong>をしています。</p>
-                    <p>プログラミングの分野も色々あって例えばウェブサイトを作る<strong>web開発</strong>をしている人もいれば、
-                        <strong>ゲームを作ったり</strong>、
-                        AIを作る<strong>機械学習</strong>をしている人もいます。</p>
-                    <p>また、KCLCの部長は同級生と協力し<strong>Androidのアプリ</strong>を作ってパソコン甲子園という大会でグランプリを獲得しました。</p>
-                    <p>
-                        また、部員の中には与えられた問題をプログラミングで解く<strong>競技プログラミング</strong>をしている人が結構います。
-                        この講座では主に競技プログラミングについての解説をしていきます。
-                    </p>
+                    プログラミングを体験する前に<a href="https://atcoder.jp" target="_blank">AtCoder</a>に登録をしてください。
+                    これから問題演習をしたりプログラミングを学ぶ上でAtCoderは避けて通れないと思うので登録しておいたほうがいいです。
+                    AtCoderとは何かについては競技プログラミングとは何かの章でお話します。
                 </div>
-                <h2 class="head-line">プログラミングとは何か</h2>
+
+
+
                 <div class="paragraph">
-                    <p>プログラミングというのはプログラムを作る作業のことです。ではプログラムとは何でしょうか？</p>
-                    <p>プログラムとはコンピュータに何かを実行させることの出来る命令のことです。</p>
-                    <p>例えば、「1+2を計算して」「電気をつけて」のようなものをプログラムと呼びます。
-                        このプログラムを実行することによってコンピュータは1+2=3と計算してくれたり電気をつけたりしてくれるのです。</p>
+                    登録ができたらAtCoderの
+                    <a href="https://atcoder.jp/contests/practice/custom_test" target="_blank">コードテスト</a>
+                    を開いてください。
                 </div>
                 <div class="paragraph">
-                    <p>
-                    ではこのプログラムはどのようにして作るのでしょうか？
-                    プログラムはコンピュータの分かる言語で書かなくてはいけません。このコンピュータの分かる言語のことを
-                    <strong>プログラミング言語</strong>といいます。このプログラミング言語について知り、書けるようになればコンピュータに
-                    命令を出すことができます。</p>
-                    <p>このプログラミング言語はいくつも種類がありますが、この講座では<strong>C++</strong>を学ぶことを推奨します。</p>
+                    開けると以下のような画面が出てくるはずです。
+                    <img src="../../../assets/img/AtCoder-codetest-explain.png">
+                    そうしたら「言語」というところから<strong>C++(GCC 9.2.1)</strong>(画像と同じもの)を選択してください。
+                    それが出来たら下のコードをコピーして<strong>ソースコード</strong>の部分に張り付けてください。
+                    今はコードの意味が分からなくても大丈夫です。後で分かるようになるので。
+                </div>
+                <div class="paragraph">
+                <pre><code class="cpp code">#include&lt;bits/stdc++.h&gt;
+using namespace std;
+int main(){
+    cout &lt;&lt; "Hello!" &lt;&lt; endl;
+}</code></pre>
+                </div>
+                <div class="paragraph">
+                    貼り付け終わったら画面を下にスクロールして、青い<strong>実行</strong>ボタンを押してください。
+                    しばらく待つと<strong>標準出力</strong>という部分に"Hello!"と表示されると思います。
+                    されていない場合はどこか間違えているのでもういちどコピペをしてみてください。
+                </div>
+                <div class="paragraph">
+                    標準出力に"Hello!"と表示された方、おめでとうございます！プログラムを実行することができました！
+                    とても簡単ですよね？
+                </div>
+                <h2 class="head-line">次回の予定</h2>
+                <div class="paragraph">
+                    今回は皆さんにAtCoderのコードテストの使い方を知り、使ってもらいました。
+                    これでプログラミングをする準備は整いました。次回からは皆さんにコードを書いてもらいます。
                 </div>
             </div>
 
