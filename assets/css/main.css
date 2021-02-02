@@ -17,8 +17,12 @@
     margin-right: 20px;
 }
 /* 見出し */
-.head-line{
+h1.head-line,h2.head-line{
     padding: 1rem 2rem;
+    border-left: 4px solid #000;
+}
+h3.head-line{
+    padding: 0.5rem 1rem;
     border-left: 4px solid #000;
 }
 
@@ -37,6 +41,8 @@
     background-color: white;
     font-size: larger;
 }
+
+
 .article-link{
     font-size: larger;
 }
@@ -62,7 +68,8 @@
     z-index: 1;
 }
 
-.main-article div{
+
+.description div,.main-article div{
     margin: 20px;
     z-index: -1;
     font-size: 105%;
