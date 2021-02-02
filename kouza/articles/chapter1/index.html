@@ -17,6 +17,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <!-- 独自のcss -->
     <link rel="stylesheet" type="text/css" href="../../../assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/syntax.css">
+    <!--シンタックスハイライト-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/vs.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();window.onload = function(){$(".hljs").css("background-color","#f2f2f2");}</script>
 
 
     <script type="text/javascript" id="MathJax-script" async
@@ -58,7 +63,50 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
         
         <div class="row">
             <div class="col-md-9 order-md-1 col-sm-12 order-sm-2 main-article shadow">
-                <h1 class="head-line">1章-</h1>
+                <h1 class="head-line">第1章-プログラミングへの一歩</h1>
+                <div class="paragraph">
+                    前回の講座ではプログラミングとは何かについて解説しましたが、解説だけでは飽きると思うので
+                    ここでは皆さんに実際にコードを実行してプログラミングの楽しさを体験してもらおうと思います。
+                </div>
+
+
+                <!--todo:競技プログラミングとは何かの章を作る-->
+                <div class="paragraph">
+                    プログラミングを体験する前に<a href="https://atcoder.jp" target="_blank">AtCoder</a>に登録をしてください。
+                    これから問題演習をしたりプログラミングを学ぶ上でAtCoderは避けて通れないと思うので登録しておいたほうがいいです。
+                    AtCoderとは何かについては競技プログラミングとは何かの章でお話します。
+                </div>
+
+
+
+                <div class="paragraph">
+                    登録ができたらAtCoderの
+                    <a href="https://atcoder.jp/contests/practice/custom_test" target="_blank">コードテスト</a>
+                    を開いてください。
+                </div>
+                <div class="paragraph">
+                    開けると以下のような画面が出てくるはずです。
+                    <img src="../../../assets/img/AtCoder-codetest-explain.png">
+                    そうしたら「言語」というところから<strong>C++(GCC 9.2.1)</strong>(画像と同じもの)を選択してください。
+                    それが出来たら下のコードをコピーして<strong>ソースコード</strong>の部分に張り付けてください。
+                    今はコードの意味が分からなくても大丈夫です。
+                </div>
+                <div class="paragraph">
+                <pre><code class="cpp code">#include&lt;bits/stdc++.h&gt;
+using namespace std;
+int main(){
+    cout &lt;&lt; "Hello!" &lt;&lt; endl;
+}</code></pre>
+                </div>
+                <div class="paragraph">
+                    貼り付け終わったら画面を下にスクロールして、青い<strong>実行</strong>ボタンを押してください。
+                    しばらく待つと<strong>標準出力</strong>という部分に"Hello!"と表示されると思います。
+                    されていない場合はどこか間違えているのでもういちどコピペをしてみてください。
+                </div>
+                <div class="paragraph">
+                    標準出力に"Hello!"と表示された方、おめでとうございます！プログラムを実行することができました！
+                    これでプログラミングをする準備は整いました。次回からは皆さんがコードを書いていきます。
+                </div>
             </div>
 
 

@@ -1,0 +1,14 @@
+pre{
+    background-color: rgb(165, 165, 165);
+}
+
+.code {
+    margin-left: 0;
+    position: relative;
+    box-sizing: border-box;
+    vertical-align: 0;
+    font-weight: 700;
+    background-color: rgb(177, 177, 177);
+    border: 1px rgb(165, 165, 165) solid;
+    padding: 10px;
+}
