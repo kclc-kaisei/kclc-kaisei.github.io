@@ -68,6 +68,11 @@ h3.head-line{
     background-color: white;
     margin-right: 40px;
     padding: 30px;
+    position: sticky;
+    top: 50px;
+    right: 0px;
+    left: auto;
+    bottom: 0px;
     text-align: left;
 }
 
