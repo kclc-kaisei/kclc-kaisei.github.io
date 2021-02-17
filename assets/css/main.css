@@ -17,6 +17,10 @@
     margin-right: 20px;
 }
 /* 見出し */
+.head-line{
+    padding: 0.5rem 1rem;
+    border-left: 4px solid #000;
+}
 h1.head-line,h2.head-line{
     padding: 1rem 2rem;
     border-left: 4px solid #000;
@@ -25,6 +29,7 @@ h3.head-line{
     padding: 0.5rem 1rem;
     border-left: 4px solid #000;
 }
+
 
 .prob{
     border: #ccc 1px solid;
@@ -112,6 +117,13 @@ h3.head-line{
     background-color: white;
 }
 
+.url{
+    font-size: 170%;
+}
+.url:hover{
+    text-decoration: none;
+    color: tomato;
+}
 
 .description div,.main-article div{
     margin: 20px;
