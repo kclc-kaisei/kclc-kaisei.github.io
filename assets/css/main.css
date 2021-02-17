@@ -147,12 +147,6 @@ img{
     max-width: 100%;
 }
 
-/* スクロールバーを非表示に(スクロールは可能) */
-/*::-webkit-scrollbar {
-    display: none;
-    -webkit-appearance: none;
-}*/
-
 
 body{
     background-color: rgb(228, 228, 228);
