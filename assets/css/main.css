@@ -156,3 +156,11 @@ body{
 .row{
     width: 105%;
 }
+
+blockquote{
+    margin: 1em 0;
+    color: #666;
+    border-left: 7px #EEE solid;
+    padding: 10px;
+    padding-left: 15px;
+}
