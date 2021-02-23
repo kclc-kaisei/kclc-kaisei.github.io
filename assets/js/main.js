@@ -13,7 +13,8 @@ async function setup_sub(s){
         type: "GET",
         url: `/kclc-kaisei.github.io/assets/html/${s}.html`,
     }).done((data) => {
-        $(`#${s}`).after(data);
+        if(s === "header")$("head").prepend(data);
+        else $(`#${s}`).after(data);
     })
 }
 async function table(table_id,active_element){
