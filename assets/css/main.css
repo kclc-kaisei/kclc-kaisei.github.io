@@ -56,10 +56,6 @@ h3.head-line{
     font-size: larger;
 }
 
-.article-link:hover{
-    color: tomato;
-    text-decoration: none;
-}
 
 .table-outer{
     background-color: rgb(228, 228, 228);
@@ -120,12 +116,12 @@ h3.head-line{
 .url{
     font-size: 170%;
 }
-.url:hover{
+a:hover{
     text-decoration: none;
     color: tomato;
 }
 
-.description div,.main-article div{
+.description div,.main-article .paragraph{
     margin: 20px;
     z-index: -1;
     font-size: 105%;
@@ -150,9 +146,23 @@ img{
 
 body{
     background-color: rgb(228, 228, 228);
-    
 }
 
 .row{
     width: 105%;
+}
+
+blockquote{
+    margin: 1em 0;
+    color: #666;
+    border-left: 7px #EEE solid;
+    padding: 10px;
+    padding-left: 15px;
+}
+
+#start{
+    z-index: 10000000;
+    width: 1000px;
+    height: 1000px;
+    background-color: rgb(228, 228, 228);
 }

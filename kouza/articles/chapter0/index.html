@@ -1,60 +1,11 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <!-- タイトルと説明 -->
-    <title>42nd KCLC</title>
-    <meta name="description" content="KCLC official Homepage">
-    <!-- 表示領域 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- 文字コード設定 -->
-    <meta charset="utf-8">
-    <!-- favicon -->
-    <link rel="icon" href="../../../assets/img/favicon.ico">
-    <!--jQuery-->
-    <script src="https://img.atcoder.jp/public/fc4b538/js/lib/jquery-1.9.1.min.js"></script>
-    <!--bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    <!-- 独自のcss -->
-    <link rel="stylesheet" type="text/css" href="../../../assets/css/main.css">
-
-
-    <script type="text/javascript" id="MathJax-script" async
-src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-
-
+    <div id="header"></div>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light shadow">
-        <a href="../../../index.html"><img src="../../../assets/img/KCLC.png" class="kclc-icon"></a>
-        <a class="navbar-brand" href="../../../index.html">42nd KCLC</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="../../../index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../../../kouza/">Course</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Links
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="https://twitter.com/42ndKCLC" target="_blank" rel="noopener noreferrer">Twitter</a>
-                <a class="dropdown-item" href="http://kclc.net" target="_blank" rel="noopener noreferrer">40th/41st HP</a>
-                <a class="dropdown-item" href="https://kaiseigakuen.jp" target="_blank" rel="noopener noreferrer">Kaisei HP</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-    
-    <div class="container main">
+    <div id="navbar"></div>
+    <div class="container main" style="display: none;">
         
         <div class="row">
             <div class="col-md-9 order-md-1 col-sm-12 order-sm-2 main-article shadow">
@@ -106,25 +57,14 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
                 </div>
             </div>
 
-
-            <!--他の記事に飛ぶためのdiv-->
-            <div class="col-md-3 order-md-3 col-sm-12 order-sm-1 table-outer">
-                <div class="table shadow">
-                  <div class="table-seg active">
-                      <a href="../chapter0/index.html">第0章-はじめに</a>
-                  </div>
-                  <div class="table-seg">
-                      <a href="../chapter1/index.html">第1章-コードテスト</a>
-                  </div>
-                  <div class="table-seg">
-                      <a href="../chapter2/index.html">第2章-実際にコードを書こう</a>
-                  </div>
-                  <div class="table-seg">
-                      <a href="../binary/index.html">付録1-二進法</a>
-                  </div>
-                </div>
-            </div>
+            <div id="table1"></div>
         </div>
     </div>
+    <!--jQuery-->
+    <script src="https://img.atcoder.jp/public/fc4b538/js/lib/jquery-1.9.1.min.js"></script>
+    <script src="/kclc-kaisei.github.io/assets/js/main.js"></script>
+    <script>
+        setup(["header","navbar","table1 0"]);
+    </script>
 </body>
 </html>

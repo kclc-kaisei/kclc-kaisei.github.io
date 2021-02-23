@@ -1,78 +1,49 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <!-- タイトルと説明 -->
-    <title>42nd KCLC</title>
-    <meta name="description" content="KCLC official Homepage">
-    <!-- 表示領域 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- 文字コード設定 -->
-    <meta charset="utf-8">
-    <!-- favicon -->
-    <link rel="icon" href="../../../assets/img/favicon.ico">
-    <!--jQuery-->
-    <script src="https://img.atcoder.jp/public/fc4b538/js/lib/jquery-1.9.1.min.js"></script>
-    <!--bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    <!-- 独自のcss -->
-    <link rel="stylesheet" type="text/css" href="../../../assets/css/main.css">
-
-
-    <script type="text/javascript" id="MathJax-script" async
-src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-
-
+    <div id="header"></div>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light shadow">
-        <a href="../../../index.html"><img src="../../../assets/img/KCLC.png" class="kclc-icon"></a>
-        <a class="navbar-brand" href="../../../index.html">42nd KCLC</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="../../../index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../../../kouza/">Course</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Links
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="https://twitter.com/42ndKCLC" target="_blank" rel="noopener noreferrer">Twitter</a>
-                <a class="dropdown-item" href="http://kclc.net" target="_blank" rel="noopener noreferrer">40th/41st HP</a>
-                <a class="dropdown-item" href="https://kaiseigakuen.jp" target="_blank" rel="noopener noreferrer">Kaisei HP</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
 
+    <div id="navbar"></div>
     
-    <div class="container main">
+    <div class="container main" style="display: none;">
         
         <div class="row">
             <div class="col-md-9 order-md-1 col-sm-12 order-sm-2 main-article shadow">
                 <!--todo:詳細な説明-->
                 <h1 class="head-line">第3章-役に立つリンク集</h1>
                 <div class="paragraph">
-                    前回の章ではAPGのリンクを置いておくだけで、皆さんに基礎文法の学習を任せてしまい、申し訳ないです。
-                    C++の基礎文法はある程度理解できたでしょうか？今回の章からは本格的に問題演習をしてもらいます。
-                    問題演習に当たって役に立つリンクをいくつか紹介したいと思います。
+                    <p>
+                        前回の章ではAPGのリンクを置いておくだけで、皆さんに基礎文法の学習を任せてしまい、申し訳ないです。
+                        C++の基礎文法はある程度理解できたでしょうか？
+                    </p>
+                    <p>
+                        今回の章からは本格的に問題演習をし、競技プログラミングに慣れていってもらいます。
+                        問題演習に当たって役に立つリンクをいくつか紹介したいと思います。
+                    </p>
                 </div>
-                <a href="https://atcoder.jp" class="url head-line">AtCoder</a>
+                <h3 class="head-line">その前に</h3>
                 <div class="paragraph">
-                    <img>
-                    APG4bがあったサイトです。ここではプログラミングのコンテストに参加したり、過去問を解いたりすることができます。<br>
-                    <a href="https://qiita.com/e869120/items/f1c6f98364d1443148b3">この記事</a>をみるとAtCoderについて詳しく知れるので必ず見ておいてください。
+                    <p>この記事を読んでもらう前に皆さんに<strong>必ず</strong>読んでもらいたい記事をここに置いておきます。</p>
+                    <p><a href="https://qiita.com/e869120/items/f1c6f98364d1443148b3" target="_blank">レッドコーダーが教える、競プロ・AtCoder上達のガイドライン【初級編：競プロを始めよう】</a></p>
+                    <p>
+                        先ほど競技プログラミングという単語が出てきて何か分からなかった人もいるかもしれませんが、この記事を読めばなんとなくどういうものか分かると思います。
+                        また、記事中にいくつか演習問題が出てきますが、演習問題をまとめたものを作ったので問題を解くところは無視してもらってもいいです。
+                    </p>
+                    <hr>
+                    <p>記事は読みましたか？それでは本編スタートです！</p>
                 </div>
-                <a href="https://kenkoooo.com/atcoder#/table/" class="url head-line">AtCoder Problems</a>
+                <a href="https://atcoder.jp" class="url head-line" target="_blank">AtCoder</a>
                 <div class="paragraph">
+                    <p>
+                        APG4bがあったサイトです。上の記事でも紹介されていたと思いますが、
+                        ここではプログラミングのコンテストに参加したり、過去問を解いたりすることができます。
+                    </p>
+                </div>
+                <a href="https://kenkoooo.com/atcoder#/table/" class="url head-line" target="_blank">AtCoder Problems</a>
+                <div class="paragraph">
+                    <p>上の記事にも出てきましたが、ここでもう一度紹介します。</p>
                     <p><img src="../../../assets/img/AtCoder-Problems.png"></p>
                     <p>上の画像のような感じでAtCoderで自分の解いた問題、自分のライバルの解いた問題を可視化してくれます。</p>
                     <p>
@@ -86,13 +57,13 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
                     <p>また、解いた問題の可視化だけでなく他にも様々な機能があります。
                     例えば、
                     <ul>
-                        <li><a href="https://kenkoooo.com/atcoder#/contest/recent">Virtual Contests</a></li>本番のような形式の疑似コンテストを開ける
-                        <li>User</li>好きなユーザーの詳細な情報を見れる
+                        <li><a href="https://kenkoooo.com/atcoder#/contest/recent" target="_blank">Virtual Contests</a></li>本番のような形式の疑似コンテストを開ける
+                        <li><a href="https://kenkoooo.com/atcoder#/user/tourist" target="_blank">User</a></li>好きなユーザーの詳細な情報を見れる
                     </ul>
                     などです。ここでは機能の詳しい説明は省きますので気になったものがあったら是非使って試してみてください。
                     </p>
                 </div>
-                <a href="https://atcoder-scores.herokuapp.com/" class="url head-line">AtCoder Scores</a>
+                <a href="https://atcoder-scores.herokuapp.com/" class="url head-line" target="_blank">AtCoder Scores</a>
                 <div class="paragraph">
                     <p>
                         こちらも自分の解いた問題を可視化してくれるサイトですが、AtCoder Problemsがコンテストごとに表示をしているのに対して
@@ -110,40 +81,39 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
                         すると下のほうに上の画像のような感じで表示されると思います。
                         ここではそれぞれのユーザーが正解した問題、間違えた問題が色分けされて表示されます。
                     </p>
-                    <p>また、そのユーザーがどれだけ精進をした(問題を解くこと)かをグラフにしてくれる精進グラフという機能もついています。
-                    こちらも、ここでは詳しい説明は省きます。</p>
+                    <p>
+                        また、そのユーザーがどれだけ精進をした(問題を解くこと)かをグラフにしてくれる
+                        <a href="https://atcoder-scores.herokuapp.com/graph" target="_blank">精進グラフ</a>という機能もついています。
+                    </p>
                 </div>
                 <h3 class="head-line">まとめ</h3>
                 <div class="paragraph">
                     <p>
-                        この章では競技プログラミングで主に使うサイトとその紹介をしました。
+                        この章では競技プログラミングで主に使うサイトとその紹介をしました。これらのサイトは今後頻繁に使うので今のうちに
+                        実際に使ってみてください。
                         ほかにも便利なサイトがたくさんあるので付録に載せておきました。是非見てみてください。
+                    </p>
+                    <p>
+                        また、AtCoder Scoresの説明中に「精進」という言葉が出てきました。
+                        精進とは競技プログラミングの問題を解くことを指します。精進をしなければ実力は上がりません。実力向上への近道は精進です。
+                        なのでたくさん精進をしましょう。
                     </p>
                 </div>
 
                 <!--Qiita,AOJ-JOI,etc-->
 
-
             </div>
 
-            <!--他の記事に飛ぶためのdiv-->
-            <div class="col-md-3 order-md-3 col-sm-12 order-sm-1 table-outer">
-                <div class="table shadow">
-                  <div class="table-seg">
-                      <a href="../chapter0/index.html">第0章-はじめに</a>
-                  </div>
-                  <div class="table-seg">
-                      <a href="../chapter1/index.html">第1章-コードテスト</a>
-                  </div>
-                  <div class="table-seg active">
-                      <a href="../chapter2/index.html">第2章-実際にコードを書こう</a>
-                  </div>
-                  <div class="table-seg">
-                      <a href="../binary/index.html">付録1-二進法</a>
-                  </div>
-                </div>
-            </div>
+            <div id="table1"></div>
+
         </div>
     </div>
+    
+    <!--jQuery-->
+    <script src="https://img.atcoder.jp/public/fc4b538/js/lib/jquery-1.9.1.min.js"></script>
+    <script src="/kclc-kaisei.github.io/assets/js/main.js"></script>
+    <script>
+        setup(["header","navbar","mathjax","table1 3"]);
+    </script>
 </body>
 </html>
