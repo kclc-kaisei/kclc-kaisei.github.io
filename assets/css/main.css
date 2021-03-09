@@ -16,6 +16,7 @@
     /* 大画面のときに文字と被る為 */
     margin-right: 20px;
 }
+
 /* 見出し */
 .head-line{
     padding: 0.5rem 1rem;
@@ -57,20 +58,21 @@ h3.head-line{
 }
 
 
+/* テーブル */
 .table-outer{
     background-color: rgb(228, 228, 228);
     margin-top: -5px;
     margin-bottom: 50px;
     padding-top: 50px;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 0px;
     text-align: center;
     font-size: larger;
 }
 
 .table{
     background-color: white;
-    margin-right: 40px;
+    margin-right: 0px;
     padding: 30px;
     position: sticky;
     top: 115px;
@@ -82,21 +84,24 @@ h3.head-line{
     overflow-y: scroll;
 }
 
-.table::-webkit-scrollbar {
-    display: none;
-    -webkit-appearance: none;
-}
-
-/*テーブルの一つ一つの要素*/
-.table-seg{
+/* articlesのテーブル */
+.table.articles .table-seg{
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+/* apgのテーブル */
+.table.apg .table-seg{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 90%;
+}
+
+/* テーブルの共通部分 */
 .table-seg a{
     color: rgb(100, 100, 100);
-    
 }
-.table a:hover{
+.table-seg a:hover{
     color: rgb(14, 14, 14);
     text-decoration: none;
 }
@@ -105,6 +110,7 @@ h3.head-line{
     padding-left: 10px;
     border-left: 4px solid #000;
 }
+
 
 
 .main-article{
