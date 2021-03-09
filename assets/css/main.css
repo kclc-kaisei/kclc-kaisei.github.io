@@ -81,6 +81,7 @@ h3.head-line{
     max-height: 500px;
     overflow-y: scroll;
 }
+
 .table::-webkit-scrollbar {
     display: none;
     -webkit-appearance: none;
@@ -143,6 +144,9 @@ img{
     max-width: 100%;
 }
 
+code{
+    background-color: rgb(226, 226, 226);
+}
 
 body{
     background-color: rgb(228, 228, 228);
