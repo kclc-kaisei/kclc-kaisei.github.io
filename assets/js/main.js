@@ -1,49 +1,57 @@
-function wait(n,f){
-    let cnt = 0;
-    let inv = setInterval(() => {
-        cnt++;
-        if(cnt == 1){
-            f();
-            clearInterval(inv);
-        }
-    },n);
-}
-async function setup_sub(s){
-    $.ajax({
-        type: "GET",
-        url: `/kclc-kaisei.github.io/assets/html/${s}.html`,
-    }).done((data) => {
-        if(s === "header")$("head").prepend(data);
-        else $(`#${s}`).after(data);
-    })
-}
-async function table(table_id,active_element){
-    $.ajax({
-        type: "GET",
-        url: `/kclc-kaisei.github.io/assets/html/table${table_id}.html`,
-    }).done((data) => {
-        $(`#table${table_id}`).after(data);
-        $(".table-seg").eq(active_element).addClass("active");
-    })
+function sethtml(s,html){
+    if(s.match(/table/) !== null){
+        let ps = s.replace("table","").split(" ");
+        $(`#table${ps[0]}`).after(html);
+        $(".table-seg").eq(Number(ps[1])).addClass("active");
+        let has = setInterval(() => {
+            if($(".table-seg").eq(Number(ps[1])).hasClass("active")){
+                console.log($(".table-seg.active").offset());
+                $(".table").scrollTop($(".table-seg.active").offset().top - $(".table").offset().top - 5);
+                clearInterval(has);
+            }
+        },50);
+    }
+    else{
+        if(s === "header")$("head").prepend(html);
+        else $(`#${s}`).after(html);
+    }
 }
 
-//priority:
-//header navbar table mathjax
 function setup(vec){
-    setup_sub("header").then(() => {
-        let cnt = 0;
-        wait(50,function(){
-            if(cnt === 1)clearTimeout(timeout);
-            cnt++;
-            vec.forEach(ele => {
-                if(ele.match(/table/) !== null){
-                    ele = ele.replace("table","").split(" ");
-                    table(Number(ele[0]),Number(ele[1]));
+    let htmls = new Object();
+    vec.forEach((s) => {
+        if(s.match(/table/) !== null){
+            let tab = s.replace("table","").split(" ");
+            return $.ajax({
+                type: "GET",
+                url: `/kclc-kaisei.github.io/assets/html/table${Number(tab[0])}.html`,
+                success: function(data){
+                    htmls[s] = data;
                 }
-                else if(ele != "header")setup_sub(ele);
-            });
+            })
+        }
+        else{
+            $.ajax({
+                type: "GET",
+                url: `/kclc-kaisei.github.io/assets/html/${s}.html`,
+                success: function(data){
+                    htmls[s] = data;
+                }
+            })
+        }
+    });
+    //全要素埋まったら表示
+    let eleok = setInterval(() => {
+        let ok = true;
+        vec.forEach((id) => {
+            if(htmls[id] === undefined)ok = false;
         })
-    }).then(() => {
-        wait(250,() => $(".main").css("display","block"));
-    })
+        if(ok){
+            for(let i = 0;i < vec.length;i++){
+                sethtml(vec[i],htmls[vec[i]]);
+            }
+            $(".main").css("display","block");
+            clearInterval(eleok);
+        }
+    },50);
 }
