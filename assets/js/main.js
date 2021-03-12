@@ -6,7 +6,7 @@ function sethtml(s,html){
         let has = setInterval(() => {
             if($(".table-seg").eq(Number(ps[1])).hasClass("active")){
                 console.log($(".table-seg.active").offset());
-                $(".table").scrollTop($(".table-seg.active").offset().top - $(".table").offset().top - 5);
+                $(".table").scrollTop($(".table-seg.active").offset().top - $(".table").offset().top - 10);
                 clearInterval(has);
             }
         },50);
