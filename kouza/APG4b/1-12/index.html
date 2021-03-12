@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <div id="header"></div>
+    <div id="mathjax"></div>
+</head>
+<body>
+
+    <div id="navbar"></div>
+    <div class="container main" style="display: none;">
+        
+        <div class="row">
+            <div class="col-md-9 order-md-1 col-sm-12 order-sm-2 main-article shadow">
+                <h1 class="head-line">1.12.文字列と文字</h1>
+                <div class="paragraph"><a href="https://atcoder.jp/contests/APG4b/tasks/APG4b_m" class="url" target="_blank">APG4bの該当ページ</a></div>
+                <h3 class="head-line">コメント</h3>
+                <div class="paragraph">
+                    <p>
+                        APG4b内では文字列 \(S\) の \(i\) 番目にアクセスするときに <code>S.at(i)</code> という書き方をしていますが、
+                        <code>S[i]</code> という書き方をすることも出来ます。
+                    </p>
+                    <p>
+                        <code>S[i]</code> は添字の範囲が正しくなくてもエラーを出してくれないのですが、<code>S.at(i)</code> よりも <code>S[i]</code>
+                        の方が見やすいのでこちらを使うことを推奨します。
+                    </p>
+                </div>
+                <h3 class="head-line">演習問題</h3>
+                <div class="paragraph">
+                    文字列を扱う問題も数多くあります。
+                    <ul>
+                        <li><a href="https://atcoder.jp/contests/APG4b/tasks/APG4b_ck" target="_blank">EX12 - 足したり引いたり</a></li>
+                        <li><a href="https://atcoder.jp/contests/abc049/tasks/abc049_a" target="_blank">A - 居合を終え、青い絵を覆う / UOIAUAI</a></li>
+                        <li><a href="https://atcoder.jp/contests/abc048/tasks/abc048_a" target="_blank">A - AtCoder *** Contest</a></li>
+                        <li><a href="https://atcoder.jp/contests/abc050/tasks/abc050_a" target="_blank">A - Addition and Subtraction Easy</a></li>
+                        <li><a href="https://atcoder.jp/contests/abc041/tasks/abc041_a" target="_blank">A - 添字</a></li>
+                        <li><a href="https://atcoder.jp/contests/abc038/tasks/abc038_a" target="_blank">A - お茶</a></li>
+                        <li><a href="https://atcoder.jp/contests/abc029/tasks/abc029_a" target="_blank">A - 複数形</a></li>
+                        <li><a href="https://atcoder.jp/contests/abc015/tasks/abc015_1" target="_blank">A - 高橋くんの研修</a></li>
+                        <li><a href="https://atcoder.jp/contests/abc010/tasks/abc010_1" target="_blank">A - ハンドルネーム</a></li>
+                    </ul>
+                    余裕がある人向けの問題(少し難しいです)
+                    <ul>
+                        <li><a href="https://atcoder.jp/contests/abc075/tasks/abc075_b" target="_blank">B - Minesweeper</a></li>
+                        <li><a href="https://atcoder.jp/contests/abc176/tasks/abc176_b" target="_blank">B - Multiple of 9</a></li>
+                        <code>(文字列)[i] - '0'</code> でその文字列のi番目の<strong>文字</strong>を<strong>数字</strong>として取得できます。
+                    </ul>
+                </div>
+            </div>
+            
+            <div id="table2"></div>
+        </div>
+    </div>
+    <!--jQuery-->
+    <script src="https://img.atcoder.jp/public/fc4b538/js/lib/jquery-1.9.1.min.js"></script>
+    <script src="/kclc-kaisei.github.io/assets/js/main.js"></script>
+    <script>
+        setup(["header","navbar","mathjax","table2 12"])
+    </script>
+</body>
+</html>
