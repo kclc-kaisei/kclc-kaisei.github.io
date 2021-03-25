@@ -1,1 +1,70 @@
-site_name: My Docs
+site_name: KCLC official Homepage
+site_url: https://kclc-kaisei.github.io/
+repo_url: https://github.com/kclc-kaisei/kclc-kaisei.github.io/
+repo_name: kclc-kaisei/kclc-kaisei.github.io
+site_author: KCLC
+site_description: >-
+  KCLC official Homepage
+theme:
+  name: material
+  custom_dir: overrides
+  language: ja
+  favicon: assets/img/favicon.ico
+  features:
+    - navigation.tabs
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/kclc-kaisei/kclc-kaisei.github.io
+      - icon: fontawesome/brands/twitter
+      link: https://twitter.com/42ndKCLC
+
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.attr_list
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+plugins:
+  - search
+  - git-revision-date-localized
+
+nav:
+  - Home: index.md
