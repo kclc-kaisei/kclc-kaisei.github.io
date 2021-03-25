@@ -64,7 +64,7 @@ extra_javascript:
 
 plugins:
   - search
-  - git-revision-date-localized
+  # - git-revision-date-localized
 
 nav:
   - Home: index.md
