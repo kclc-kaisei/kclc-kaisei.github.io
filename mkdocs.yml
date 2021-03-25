@@ -7,7 +7,7 @@ site_description: >-
   KCLC official Homepage
 theme:
   name: material
-  custom_dir: overrides
+  # custom_dir: overrides
   language: ja
   favicon: assets/img/favicon.ico
   features:
@@ -17,7 +17,7 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/kclc-kaisei/kclc-kaisei.github.io
-      - icon: fontawesome/brands/twitter
+    - icon: fontawesome/brands/twitter
       link: https://twitter.com/42ndKCLC
 
 markdown_extensions:
