@@ -134,6 +134,11 @@ a:hover{
     font-size: 105%;
 }
 
+p{
+    margin: 20px;
+    z-index: -1;
+    font-size: 105%;
+}
 
 /*input type="number"の時に出てくる右側の矢印を消す*/
 input.prob[type="number"]::-webkit-outer-spin-button, 
