@@ -5,3 +5,6 @@
 /docs/kouza/
 *.html
 /site
+
+## mkdocs build で生成されたsiteを無視
+site
