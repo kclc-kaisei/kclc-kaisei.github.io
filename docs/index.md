@@ -1,14 +1,55 @@
-# Welcome to MkDocs
+---
+lang: ja
+---
 
-Hello, World!
+::: {#navbar}
+:::
 
-## Commands
+::: {.container .main style="display: none;"}
+::: {.row}
+::: {.col-sm-12 .shadow .description}
+# Home {#home .head-line}
 
-Hello, World!!!
+<div>
 
-## Project layout
+ここではKCLCとこのサイトの簡単な説明をしています。
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+</div>
+
+### KCLCとは？ {#kclcとは .head-line}
+
+<div>
+
+KCLC、は「Kaisei Computer Lovers
+Club」の略です。まあつまり開成のコンピューター部です。
+部活は化学室で行っていますが、**Wi-fiが通っていない**ため主な活動場所は家となっています。
+
+</div>
+
+### このサイトは何？ {#このサイトは何 .head-line}
+
+<div>
+
+このサイトはKCLCの公式ホームページです。KCLCがどんな部活であるかを発信したり、
+新しく部活に入った人などが技術を学んだりできるサイトです。
+
+</div>
+
+### サイトマップ {#サイトマップ .head-line}
+
+-   [Home](#){.article-link}
+-   [Course](./kouza/index.html){.article-link}
+
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+:::
+:::
+:::
