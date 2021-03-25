@@ -1,2 +1,8 @@
 ## for editor
 .vscode
+
+## 試験運用のため除去
+/docs/kouza
+/assets
+*.html
+/site
