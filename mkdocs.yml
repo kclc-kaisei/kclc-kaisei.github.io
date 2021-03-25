@@ -21,6 +21,11 @@ extra:
       link: https://twitter.com/42ndKCLC
 
 markdown_extensions:
+  # extension for syntax highlight
+  # - codehilite
+  # - codehilite:
+  #     linenums: true
+
   - markdown.extensions.admonition
   - markdown.extensions.attr_list
   - markdown.extensions.def_list
