@@ -1,10 +1,12 @@
-## for editor
+# for editor
 .vscode
 
-## 試験運用のため除去
+# 試験運用のため除去
 /docs/kouza/
 *.html
-/site
 
-## mkdocs build で生成されたsiteを無視
+# mkdocs build で生成されたsiteを無視
 site
+
+#pandocを用いて変換するときの中間ファイル
+pandoc.md
