@@ -18,7 +18,12 @@
 
 関数を使わなくて解ける問題もあると思いますが、ここでは必ず関数を自分で書いてみてください。
 
-- [EX15 - 三人兄弟へのプレゼント](https://atcoder.jp/contests/apg4b/tasks/APG4b_ch)
+- [EX15 - 三人兄弟へのプレゼント](https://atcoder.jp/contests/apg4b/tasks/APG4b_ch){:target="_blank"}
+- [C - Unlucky 7](https://atcoder.jp/contests/abc186/tasks/abc186_c){:target="_blank"}  
+    - \(n\) を10進法で表した時に7を含むか
+    - \(n\) を8進法で表した時に7を含むか
+
+という二つの関数を定義して解いてください。
 
 <!--問題をもっと追加する-->
 

@@ -31,4 +31,4 @@ APG4b内では文字列 \(S\) の \(i\) 番目にアクセスするときに `S.
 - [B - Multiple of 9](https://atcoder.jp/contests/abc176/tasks/abc176_b){:target="_blank"}
 
 ヒント:  
-`(文字列){:target="_blank"}[i] - '0'` でその文字列のi番目の**文字**を**数字**として取得できます。
+`(文字列)[i] - '0'` でその文字列のi番目の**文字**を**数字**として取得できます。
