@@ -12,9 +12,9 @@ theme:
   favicon: assets/img/favicon.ico
   features:
     - navigation.tabs
-  # palette:
-  #   accent: cyan
-  #   primary: cyan
+  palette:
+    accent: red
+    primary: cyan
 
 extra:
   social:
