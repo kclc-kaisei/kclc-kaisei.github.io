@@ -88,3 +88,6 @@ nav:
     - 1.06.if文・比較演算子・論理演算子: APG4b/1-6/index.md
     - 1.07.条件式の結果とbool型: APG4b/1-7/index.md
     - 1.08.変数のスコープ: APG4b/1-8/index.md
+    - 1.09.複合代入演算子: APG4b/1-9/index.md
+    - 1.10.while文: APG4b/1-10/index.md
+    

@@ -1,7 +1,7 @@
 1.01.出力とコメント
 ============
 
-# [APG4bの該当ページ](https://atcoder.jp/contests/APG4b/tasks/APG4b_b){:target="_blank"}
+[APG4bの該当ページ](https://atcoder.jp/contests/APG4b/tasks/APG4b_b){:target="_blank"}
 
 ### コメント
 
