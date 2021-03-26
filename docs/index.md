@@ -12,5 +12,5 @@ KCLC、は「Kaisei Computer Lovers Club」の略です。まあつまり開成�
 
 ### サイトマップ
 
--   [Home](#)
--   [Course](./kouza/)
+- [Home](#)
+- [Course](./articles/)
