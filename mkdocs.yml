@@ -77,6 +77,7 @@ nav:
     - 第0章-はじめに: articles/chapter0/index.md
     - 第1章-コードの実行: articles/chapter1/index.md
     - 第2章-C++の基礎文法: articles/chapter2/index.md
+    - 第3章-役に立つリンク集: articles/chapter3/index.md
 
   - APG4b:
     - 1.00.はじめに: APG4b/1-0/index.md
@@ -88,3 +89,10 @@ nav:
     - 1.06.if文・比較演算子・論理演算子: APG4b/1-6/index.md
     - 1.07.条件式の結果とbool型: APG4b/1-7/index.md
     - 1.08.変数のスコープ: APG4b/1-8/index.md
+    - 1.09.複合代入演算子: APG4b/1-9/index.md
+    - 1.10.while文: APG4b/1-10/index.md
+    - 1.11.for文・break・continue: APG4b/1-11/index.md
+    - 1.12.文字列と文字: APG4b/1-12/index.md
+    - 1.13.配列: APG4b/1-13/index.md
+    - 1.14.STLの関数: APG4b/1-14/index.md
+    - 1.15.関数: APG4b/1-15/index.md

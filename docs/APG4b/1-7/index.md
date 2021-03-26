@@ -1,7 +1,7 @@
 1.07.条件式の結果とbool型
 =================
 
-[APG4bの該当ページ](https://atcoder.jp/contests/APG4b/tasks/APG4b_h)
+[APG4bの該当ページ](https://atcoder.jp/contests/APG4b/tasks/APG4b_h){:target="_blank"}
 
 ### コメント
 
@@ -10,4 +10,5 @@ bool型を使うことで `if` 文などが書きやすくなり、コードが�
 ### 演習問題
 
 問題数は少ないです。
-- [EX7 - bool値パズル](https://atcoder.jp/contests/APG4b/tasks/APG4b_cp)
+
+- [EX7 - bool値パズル](https://atcoder.jp/contests/APG4b/tasks/APG4b_cp){:target="_blank"}
