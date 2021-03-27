@@ -3,8 +3,6 @@
 
 [APG4bの該当ページ](https://atcoder.jp/contests/APG4b/tasks/APG4b_a){:target="_blank"}
 
-{{link("https://atcoder.jp/contests/APG4b/tasks/APG4b_a")}}
-
 ### コメント
 
 特にはありません。こんな感じで進めていきます。
