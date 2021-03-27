@@ -12,9 +12,9 @@ theme:
   favicon: assets/img/favicon.ico
   features:
     - navigation.tabs
-  # palette:
-  #   accent: cyan
-  #   primary: cyan
+  palette:
+    accent: green
+    primary: deep orange
 
 extra:
   social:
@@ -72,6 +72,7 @@ extra_javascript:
 
 plugins:
   - search
+  # - macros
   # - git-revision-date-localized
 
 nav:
@@ -81,6 +82,7 @@ nav:
     - 第1章-コードの実行: articles/chapter1/index.md
     - 第2章-C++の基礎文法: articles/chapter2/index.md
     - 第3章-役に立つリンク集: articles/chapter3/index.md
+    - 付録1-2進法大好き!souta_1326君!: articles/huroku1/index.md
 
   - APG4b:
     - 1.00.はじめに: APG4b/1-0/index.md
