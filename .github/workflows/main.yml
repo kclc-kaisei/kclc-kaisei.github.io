@@ -2,8 +2,7 @@ name: GitHub Pages
 on:
   push:
     branches:
-      - mkdocs
-      # main ブランチに変更する際は書き換える
+      - main
 
 jobs:
   build:
