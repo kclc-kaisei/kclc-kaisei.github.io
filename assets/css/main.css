@@ -1,0 +1,178 @@
+/* ヘッダー背景色 */
+.navbar{
+    background-color: #539412;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000000000000;
+}
+/* ヘッダーアイコン */
+.kclc-icon{
+    opacity: .8;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    /* 大画面のときに文字と被る為 */
+    margin-right: 20px;
+}
+
+/* 見出し */
+.head-line{
+    padding: 0.5rem 1rem;
+    border-left: 4px solid #000;
+}
+h1.head-line,h2.head-line{
+    padding: 1rem 2rem;
+    border-left: 4px solid #000;
+}
+h3.head-line{
+    padding: 0.5rem 1rem;
+    border-left: 4px solid #000;
+}
+
+
+.prob{
+    border: #ccc 1px solid;
+}
+
+.shadow{
+    box-shadow:0px 0px 10px;
+}
+
+.main{
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.description{
+    padding: 50px;
+    background-color: white;
+    font-size: larger;
+    margin-bottom: 80px;
+}
+
+
+.article-link{
+    font-size: 110%;
+}
+
+
+/* テーブル */
+.table-outer{
+    background-color: rgb(228, 228, 228);
+    margin-top: -5px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 0px;
+    text-align: center;
+    font-size: larger;
+}
+
+.table{
+    background-color: white;
+    margin-right: 0px;
+    padding: 30px;
+    position: sticky;
+    top: 115px;
+    right: 0px;
+    left: auto;
+    bottom: 0px;
+    text-align: left;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+/* articlesのテーブル */
+.table.articles .table-seg{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* apgのテーブル */
+.table.apg .table-seg{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 90%;
+}
+
+/* テーブルの共通部分 */
+.table-seg a{
+    color: rgb(100, 100, 100);
+}
+.table-seg a:hover{
+    color: rgb(14, 14, 14);
+    text-decoration: none;
+}
+.table .active a{
+    color: rgb(14, 14, 14);
+    padding-left: 10px;
+    border-left: 4px solid #000;
+}
+
+
+
+.main-article{
+    margin: -5px 0px 50px 0px;
+    padding: 40px 40px 50px 40px;
+    z-index: 1;
+    background-color: white;
+}
+
+.url{
+    font-size: 170%;
+}
+a:hover{
+    text-decoration: none;
+    color: tomato;
+}
+
+.description div,.main-article .paragraph{
+    margin: 20px;
+    z-index: -1;
+    font-size: 105%;
+}
+
+
+/*input type="number"の時に出てくる右側の矢印を消す*/
+input.prob[type="number"]::-webkit-outer-spin-button, 
+input.prob[type="number"]::-webkit-inner-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+.kouza-table{
+    margin: 20px;
+}
+
+img{
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+code{
+    background-color: rgb(238, 238, 238);
+}
+
+body{
+    background-color: rgb(228, 228, 228);
+}
+
+.row{
+    width: 105%;
+}
+
+blockquote{
+    margin: 1em 0;
+    color: #666;
+    border-left: 7px #EEE solid;
+    padding: 10px;
+    padding-left: 15px;
+}
+
+#start{
+    z-index: 10000000;
+    width: 1000px;
+    height: 1000px;
+    background-color: rgb(228, 228, 228);
+}
