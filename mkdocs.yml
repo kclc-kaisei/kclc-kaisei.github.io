@@ -110,3 +110,11 @@ nav:
       - 2.04.参照: APG4b/2-4/index.md
       - 2.05.再帰関数: APG4b/2-5/index.md
       - 2.06.計算量: APG4b/2-6/index.md
+    - 第3章:
+      - 3.00.第3章について: APG4b/3-0/index.md
+      - 3.01.数値型: APG4b/3-1/index.md
+      - 3.02.pair／tupleとauto: APG4b/3-2/index.md
+      - 3.03.STLのコンテナ: APG4b/3-3/index.md
+      - 3.04.構造体: APG4b/3-4/index.md
+      - 3.05.ビット演算: APG4b/3-5/index.md
+      - 3.06.その他の機能: APG4b/3-6/index.md
