@@ -108,8 +108,8 @@ nav:
       - 2.02.多重ループ: APG4b/2-2/index.md
       - 2.03.多次元配列: APG4b/2-3/index.md
       - 2.04.参照: APG4b/2-4/index.md
-      - 2.05.再帰関数: APG4b/2-5/index.md
       - 2.06.計算量: APG4b/2-6/index.md
+      - 2.05.再帰関数: APG4b/2-5/index.md
     - 第3章:
       - 3.00.第3章について: APG4b/3-0/index.md
       - 3.01.数値型: APG4b/3-1/index.md
