@@ -1,4 +1,5 @@
 # 再帰関数のいろは
+
 ### はじめに
 
 この章では、「再帰関数とは何か」から「再帰関数の実装方法」まで丁寧に説明します。  
@@ -15,6 +16,7 @@ APG4bを先に読んでから、こちらの記事の練習問題だけを解い
 簡潔に言えば、プログラム内で、<b>ある関数の中</b>にその関数<b>自身</b>の呼び出しが含まれているものです。といっても分かりにくいので、以下の例1で考えてみましょう。
 
 #### 例1
+
 !!! example "-例1-"  
     今、$4 \times 4$のブロックチョコレート🍫があり、これを半分に割ることを繰り返します。  
     何回割れば、$1 \times 1$のピース$16$つに分けられるでしょうか？
@@ -57,6 +59,7 @@ void cut(今のサイズ){//ブロックチョコレートの1辺の長さが引
 
 
 ### 再帰関数を実装してみよう
+
 先ほどの例では、再帰関数の雰囲気しか伝わっていないと思うので、ここでは、もう少し簡単な例で実装してみましょう。
 
 #### 例2
@@ -112,6 +115,7 @@ func(n + 1);
 <br>
 
 #### 練習問題1
+
 !!! example "-練習問題1-"
     再帰関数を使って、\(1〜100\)の総和を出力してください。  
     分からない時も、ぜひヒントや解説を読んで、理解してみてください。
@@ -170,6 +174,7 @@ func(n + 1);
 <br>
 
 #### 練習問題2
+
 !!! example "-練習問題2-"
     下のリンク先の問題を再帰関数を用いて解いてください。  
     <a href = "https://atcoder.jp/contests/abc055/tasks/abc055_b">ABC055 B - Training Camp</a> (diff:<font color = "gray">332</font>)
@@ -211,14 +216,16 @@ int main(){
 <br>
 
 ### 再帰関数を役立てる！
+
 今までは再帰関数を使わない方が簡単に解ける問題ばかり解いてきましたが、ここからは、再帰関数が大いに役立つ問題を解いていきます。  
 練習問題は、全部解いてみましょう。最初は自力で考えてみたほうが良いですが、詰まったらどんどん解説を見ましょう。  
 発展問題は、少し難しいのも混じっていますが、できるだけ解いてみてください。もちろん、解説を見て解くのも良いです。
 
 
-<h3><li>列挙する</li></h3>
+### - 列挙する
 
 #### 練習問題3
+
 !!! example "-練習問題3-"
     下のリンク先の問題を解いてください。<br>
     <a href = "https://www.hackerrank.com/contests/kclc-educational-contest/challenges/2-or-1">Hackerrank - *2 or +1</a>
@@ -269,6 +276,7 @@ int main(){
 <br>
 
 #### 発展問題1
+
 !!! example "-発展問題1-"
     下のリンク先の問題を解いてください。<br>
     <a href = "https://www.hackerrank.com/contests/kclc-educational-contest/challenges/2-or-1-or-1">Hackerrank - *2 or +1 or -1</a>
@@ -346,9 +354,10 @@ int main(){
 </details>
 <br>
 
-<h3><li>最大公約数</li></h3>
+### - 最大公約数
 
 #### 練習問題4
+
 !!! example "-練習問題4-"
     下のリンク先の問題を解いてください。<br>
     <a href = "https://www.hackerrank.com/contests/kclc-educational-contest/challenges/gcd-basic">Hackerrank - GCD (Basic)</a><br>
@@ -444,6 +453,7 @@ int main(){
 
 
 #### 発展問題2
+
 !!! example "-発展問題2-"
     下のリンク先の問題を解いてください。<br>
     <a href = "https://atcoder.jp/contests/abc070/tasks/abc070_c">ABC070 C - Multiple Blocks</a><br>
@@ -492,6 +502,7 @@ int main(){
 <h3><li>部分和問題</h3>
 
 #### 練習問題5
+
 !!! example "-練習問題5-"
     下のリンク先の問題を解いてください。<br>
     <a href = "https://www.hackerrank.com/contests/kclc-educational-contest/challenges/subbill-sum-problem/problem">Hackerrank - SubBill Sum Problem</a>
@@ -529,6 +540,7 @@ int main(){
 <br>
 
 #### 発展問題3
+
 !!! example "-発展問題3-"
     下のリンク先の問題を解いてください。<br>
     <a href = "https://atcoder.jp/contests/tdpc/tasks/tdpc_contest">Atcoder - Typical DP Contest A - コンテスト</a>
@@ -545,6 +557,7 @@ int main(){
 <br>
 
 ### 章末問題
+
 <p>ここまでお疲れ様でした。</p>
 <p>最後に、以下の問題を解いてみましょう。<br>
 全てを短時間で解くのは大変ですが、ここまで来た方ならきっと解けると思います。
