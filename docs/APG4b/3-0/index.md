@@ -6,7 +6,7 @@
 ### コメント
 
 第3章も頑張りましょう～  
-[AtCoder Begginers Selection](https://atcoder.jp/contests/abs)も同時進行で進めるといいと思います。
+[AtCoder Beginners Selection](https://atcoder.jp/contests/abs)も同時進行で進めるといいと思います。
 
 ### 演習問題
 
