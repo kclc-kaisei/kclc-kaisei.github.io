@@ -12,13 +12,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-bool compare(int a, int b){
+bool compare(int a,int b){
     return a > b;
 }
 int main(){
     vector<int> vec = {5,3,1,4,2};
-    sort(vec.begin(), vec.end(), compare); // 関数を引数に渡す
-    for(int i = 0; i < 5 ;i++){
+    sort(vec.begin(),vec.end(),compare); // 関数を引数に渡す
+    for(int i = 0;i < 5;i++){
         cout << vec[i] << endl;
     }
 }
