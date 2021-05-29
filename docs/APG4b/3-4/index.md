@@ -17,7 +17,7 @@ bool compare(int a, int b){
 }
 int main(){
     vector<int> vec = {5,3,1,4,2};
-    sort(vec.bein(), vec.end(), compare); // 関数を引数に渡す
+    sort(vec.begin(), vec.end(), compare); // 関数を引数に渡す
     for(int i = 0; i < 5 ;i++){
         cout << vec[i] << endl;
     }
