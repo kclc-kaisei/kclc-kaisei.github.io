@@ -34,4 +34,4 @@ int main(){
 
 ### 演習問題
 
-- [EX24 - 時計の実装](https://atcoder.jp/contests/apg4b/tasks/APG4b_by){:targe="blank"}
+- [EX24 - 時計の実装](https://atcoder.jp/contests/apg4b/tasks/APG4b_by){:target="_blank"}
